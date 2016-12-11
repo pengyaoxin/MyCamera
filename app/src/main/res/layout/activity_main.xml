@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="cn.edu.gdmec.s07150738.mycamera.MainActivity">
+    <!--相机视频窗口-->
+    <SurfaceView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:layout_marginLeft="-20.0dip"/>
+    <!--照片-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" />
+    <!--快照-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="72.0dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_camera_pattern">
+        <ImageView
+            android:id="@+id/shutter"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/btn_shutter"
+            android:clickable="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
